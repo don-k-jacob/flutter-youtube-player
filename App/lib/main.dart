@@ -6,8 +6,6 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-import 'video_list.dart';
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(
@@ -179,17 +177,17 @@ class _MyHomePageState extends State<MyHomePage> {
             'Youtube Player Flutter',
             style: TextStyle(color: Colors.white),
           ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.video_library),
-              onPressed: () => Navigator.push(
-                context,
-                CupertinoPageRoute(
-                  builder: (context) => VideoList(),
-                ),
-              ),
-            ),
-          ],
+//          actions: [
+//            IconButton(
+//              icon: const Icon(Icons.video_library),
+//              onPressed: () => Navigator.push(
+//                context,
+//                CupertinoPageRoute(
+//                  builder: (context) => VideoList(),
+//                ),
+//              ),
+//            ),
+//          ],
         ),
         body: ListView(
           children: [
